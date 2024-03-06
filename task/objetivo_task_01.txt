@@ -1,0 +1,13 @@
+Criar um projeto chamado todo-app (Vue2, babel, router)
+2 branchs (MAIN, DEVELOP)
+develop => onde o trabalho será mostrado
+main => será mergeado apos aprovado
+ 
+task/01
+- Criação do layout com 3 tabs (Atrasado, A Fazer, Completo)
+- Ao clicar em cada aba deve abrir a sua respectiva pagina com os textos
+   * Nenhuma tarefa atrasada
+   * Nenhuma tarefa a fazer
+   * Nenhuma tarefa completa
+
+https://www.figma.com/file/rV5Ih0s0GvjPGccUDNs8Hf/To-do-app?type=design&node-id=0-1&mode=design&t=SOQShZJvcRZy2BcY-0
