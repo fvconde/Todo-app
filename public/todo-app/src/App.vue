@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    <div>
+      <img src="./assets/logo.png" alt="logo">
+    </div>
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/late" class="100px">Atrasado</router-link> |
+      <router-link to="/todo">A Fazer</router-link> |
+      <router-link to="/complete">Completo</router-link>
     </nav>
     <router-view/>
   </div>
@@ -11,21 +15,19 @@
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #202D4180;
 }
 
 nav {
   padding: 30px;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    // font-weight: bold;
+    color: #202D4180;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #2563EB;
     }
   }
 }
