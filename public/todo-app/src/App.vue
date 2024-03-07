@@ -1,13 +1,25 @@
 <template>
   <div id="app">
-    <div>
+    <div id="logo">
       <img src="./assets/logo.png" alt="logo">
     </div>
-    <nav>
-      <router-link to="/late" class="100px">Atrasado</router-link> |
-      <router-link to="/todo">A Fazer</router-link> |
-      <router-link to="/complete">Completo</router-link>
-    </nav>
+    
+      <nav>
+        <div id="tabs">
+        <div>
+          <router-link to="/late">Atrasado</router-link>
+        </div>
+        <div>
+          <router-link to="/todo">A Fazer</router-link>
+        </div>
+        <div>
+          <router-link to="/complete">Completo</router-link>
+        </div> 
+        </div>       
+      </nav>
+      <hr>
+    
+    
     <router-view/>
   </div>
 </template>
@@ -18,6 +30,20 @@
   text-align: center;
   color: #202D4180;
 }
+
+#logo {
+  padding-right: 90%;
+  padding-top: 2%;
+}
+ #logo img {
+  height: 70px;
+ }
+
+ #tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+ }
 
 nav {
   padding: 30px;
